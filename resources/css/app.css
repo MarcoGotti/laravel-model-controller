@@ -1,0 +1,77 @@
+/* #region utilities adn layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxù;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4 - 2rem);
+    padding: 1rem;
+}
+/* #endregion utilities adn layout */
+
+.card {
+    height: 100%;
+    padding: 0.5rem;
+    background-color: black;
+    color: bisque;
+
+    .title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .original_title {
+        text-align: center;
+    }
+
+    .details {
+        color: grey;
+        font-size: 12px;
+        margin: 1rem 0;
+    }
+
+    .vote {
+        color: yellow;
+        text-align: end;
+    }
+}
+
+header {
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+}
