@@ -1,1 +1,3 @@
-<div>Footer</div>
+<div>
+    <p>Copyright &copy;</p>
+</div>

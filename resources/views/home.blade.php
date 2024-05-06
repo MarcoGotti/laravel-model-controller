@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Home page')
+
 @section('content')
 
 <div class="container">
@@ -22,6 +24,7 @@
         </div>
         @endforeach
 
+        {{-- {{$movies->links()}} --}}
     </div>
 </div>
 
