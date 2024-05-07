@@ -60,12 +60,20 @@ img {
 
 header {
     background-color: black;
-    color: bisque;
     text-align: center;
-    text-transform: uppercase;
     padding: 2rem;
     box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    & a {
+        text-decoration: none;
+        color: beige;
+        padding: 0.5rem;
+    }
+}
+
+main {
+    min-height: calc(100vh - 9rem);
 }
 
 footer {
@@ -74,4 +82,9 @@ footer {
     text-align: center;
 
     padding: 2rem;
+}
+
+.activePage {
+    color: black;
+    background-color: beige;
 }

@@ -28,5 +28,28 @@ class PageController extends Controller
         //dd($movies);
         return view('home', compact('movies'));
     }
+
+    //return view('home', ['movies' => Movie::all()]);
+
+    public function filterOne()
+    {
+        $movies = Movie::where('vote', '>', 8)->orderBy('date', 'desc')->limit(5)->get();
+
+        return view('filterOne', compact('movies'));
+    }
+
+    public function filterTwo()
+    {
+        $movies = Movie::where('nationality', 'LIKE', '%british%')->orderBy('date', 'asc')->get();
+
+        return view('filterTwo', compact('movies'));
+    }
+
+    public function filterThree()
+    {
+        $movie = Movie::where('date', '>', '1980 - 01 - 01')->orderBy('date', 'asc')->first();
+        //dd($movie);
+
+        return view('filterThree', compact('movie'));
+    }
 }
-//return view('home', ['movies' => Movie::all()]);
