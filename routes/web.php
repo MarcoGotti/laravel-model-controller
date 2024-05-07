@@ -16,12 +16,13 @@ use App\Http\Controllers\Guest\PageController;
 
 Route::get('/', [PageController::class, 'index'])->name('home');
 
-/* Route::get('/filterOne', function () {
-    return view('filterOne');
-}); */
-
 Route::get('/filterOne', [PageController::class, 'filterOne'])->name('filterOne');
 
 Route::get('/filterTwo', [PageController::class, 'filterTwo'])->name('filterTwo');
 
 Route::get('/filterThree', [PageController::class, 'filterThree'])->name('filterThree');
+
+
+/* Route::get('/filterOne', function () {
+    return view('filterOne');
+}); */

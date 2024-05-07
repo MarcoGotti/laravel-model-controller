@@ -10,7 +10,7 @@
         {{-- @foreach($movies as $movie) --}}
         <div class="col-4">
             <div class="card">
-{{-- se tolgo dd(); da method filterThree() non legge più le proprietà --}}
+{{-- A volte se tolgo dd($movie) non legge più le proprietà tipo {{$movie['title']}} --}}
                 <img src="https://picsum.photos/400/200" alt="">
                 <h3 class="title">{{$movie['title']}}</h3>
                 <h6 class="original_title">{{$movie['original_title']}}</h6>

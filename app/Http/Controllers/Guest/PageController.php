@@ -11,6 +11,7 @@ class PageController extends Controller
     public function index()
     {
         $movies = Movie::all();
+
         //$movies = Movie::where('vote', '<', 8)->get();
         //$movies = Movie::where('vote', '>', 8)->orderBy('date', 'desc')->get();
 
@@ -48,7 +49,6 @@ class PageController extends Controller
     public function filterThree()
     {
         $movie = Movie::where('date', '>', '1980 - 01 - 01')->orderBy('date', 'asc')->first();
-        //dd($movie);
 
         return view('filterThree', compact('movie'));
     }

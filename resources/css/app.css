@@ -7,10 +7,12 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
 }
 
 img {
     width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .container {
@@ -35,7 +37,8 @@ img {
     height: 100%;
     padding: 0.5rem;
     background-color: black;
-    color: bisque;
+    color: rgb(255, 196, 0);
+    border-radius: 1rem;
 
     .title {
         text-align: center;
@@ -55,6 +58,7 @@ img {
     .vote {
         color: yellow;
         text-align: end;
+        margin-top: auto; /* perchè caspita non mi funziona??!! */
     }
 }
 
